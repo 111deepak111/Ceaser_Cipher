@@ -1,6 +1,4 @@
-
 import 'dart:ui';
-
 import 'package:ceaser_cipher/logic.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,11 +6,6 @@ import 'package:flutter/services.dart';
 
 
 void main() {
-  String str = "DeePak PanWAr";
-  String str2 = encrypt(str,4);
-  print(str2);
-  String str3 = encrypt(str2, -4);
-  print(str3);
   runApp(MyApp());
 }
 
@@ -38,7 +31,7 @@ class MyApp extends StatelessWidget{
                   child: TextField(
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'Enter the Text',
+                      labelText: 'Decrypted Text',
                     ),
                     controller: TextController,
                   ),
